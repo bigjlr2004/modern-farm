@@ -14,6 +14,7 @@ import {createSunflower} from "./seeds/sunflower.js";
 import {createPotato} from "./seeds/potato.js";
 //import the createAsparagus function from the asparagus module
 import {createAsparagus} from "./seeds/asparagus.js";
+import {usePlants, addPlant} from "./field.js";
 
 
 //invoke the function createPlan and store it in an object called yearlyPlan
@@ -33,8 +34,20 @@ console.log(`Wheat object: ${wheatSeed.output}`);
 //console log the wheatSeed obect type property
 console.log(`Wheat object: ${wheatSeed.type}`);
 const sunflowerSeed = createSunflower()
-console.log(sunflowerSeed)
+
 const potatoSeed = createPotato();
-console.log(potatoSeed);
+
 const asaparagusSeed = createAsparagus();
-console.log(asaparagusSeed);
+
+
+
+// const first = usePlants()
+// console.log(first)
+
+const fieldArray = addPlant(asaparagusSeed);
+console.log(fieldArray);
+const fieldArray1 = addPlant(wheatSeed);
+console.log(fieldArray);
+const fieldArray2 = usePlants();
+console.log(fieldArray2)
+
