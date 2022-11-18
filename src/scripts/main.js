@@ -14,7 +14,10 @@ import {createSunflower} from "./seeds/sunflower.js";
 import {createPotato} from "./seeds/potato.js";
 //import the createAsparagus function from the asparagus module
 import {createAsparagus} from "./seeds/asparagus.js";
+//import usePlants and addPlant from the field module
 import {usePlants, addPlant} from "./field.js";
+//import plantSeeds function from the tractor module
+import {plantSeeds} from "./tractor.js";
 
 
 //invoke the function createPlan and store it in an object called yearlyPlan
@@ -39,15 +42,14 @@ const potatoSeed = createPotato();
 
 const asaparagusSeed = createAsparagus();
 
+const test = plantSeeds(newYearlyPlan);
+console.log(test);
+const testseeds = usePlants();
+console.log(testseeds); 
 
 
 // const first = usePlants()
 // console.log(first)
 
-const fieldArray = addPlant(asaparagusSeed);
-console.log(fieldArray);
-const fieldArray1 = addPlant(wheatSeed);
-console.log(fieldArray);
-const fieldArray2 = usePlants();
-console.log(fieldArray2)
+
 
