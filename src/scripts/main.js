@@ -18,6 +18,7 @@ import {createAsparagus} from "./seeds/asparagus.js";
 import {usePlants, addPlant} from "./field.js";
 //import plantSeeds function from the tractor module
 import {plantSeeds} from "./tractor.js";
+import { harvestPlants } from "./harvester.js";
 
 
 //invoke the function createPlan and store it in an object called yearlyPlan
@@ -43,9 +44,12 @@ const potatoSeed = createPotato();
 const asaparagusSeed = createAsparagus();
 
 const test = plantSeeds(newYearlyPlan);
-console.log(test);
+
+
 const testseeds = usePlants();
-console.log(testseeds); 
+const harvested = harvestPlants(testseeds);
+console.log(harvested);
+ 
 
 
 // const first = usePlants()
