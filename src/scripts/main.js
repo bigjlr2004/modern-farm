@@ -19,6 +19,7 @@ import {usePlants, addPlant} from "./field.js";
 //import plantSeeds function from the tractor module
 import {plantSeeds} from "./tractor.js";
 import { harvestPlants } from "./harvester.js";
+import {catalog} from "./catalog.js";
 
 
 //invoke the function createPlan and store it in an object called yearlyPlan
@@ -48,7 +49,11 @@ const test = plantSeeds(newYearlyPlan);
 
 const testseeds = usePlants();
 const harvested = harvestPlants(testseeds);
-console.log(harvested);
+
+const parentHTMLElement = document.querySelector(".container")
+
+
+parentHTMLElement.innerHTML = catalog(harvested)
  
 
 
