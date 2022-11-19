@@ -22,29 +22,11 @@ import { harvestPlants } from "./harvester.js";
 import {catalog} from "./catalog.js";
 
 
-//invoke the function createPlan and store it in an object called yearlyPlan
+//invoke the function createPlan and store it in an object called newYearlyPlan
 let newYearlyPlan = createPlan();
-console.log(newYearlyPlan);
-//invoke the function createCorn and store an array of objects in the variable cornSeed
-const cornSeed = createCorn();
-console.log(cornSeed);
-//invoke the function createSoybean and store the object in the variable soybeanSeed
-const soybeanSeed = createSoybean();
-console.log(soybeanSeed);
-//invoke the function createWheat and store the object it returns in the variable wheatSeed
-const wheatSeed = createWheat();
-//console.log the wheatSeed object's output property that is an integer 
-//that was created from the createWheat function
-console.log(`Wheat object: ${wheatSeed.output}`);
-//console log the wheatSeed obect type property
-console.log(`Wheat object: ${wheatSeed.type}`);
-const sunflowerSeed = createSunflower()
 
-const potatoSeed = createPotato();
 
-const asaparagusSeed = createAsparagus();
-
-const test = plantSeeds(newYearlyPlan);
+const test = plantSeeds(newYearlyPlan); 
 
 
 const testseeds = usePlants();
@@ -57,8 +39,6 @@ parentHTMLElement.innerHTML = catalog(harvested)
  
 
 
-// const first = usePlants()
-// console.log(first)
 
 
 
