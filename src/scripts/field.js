@@ -10,6 +10,7 @@ export const addPlant = (seed) => {
 
 //define and export a function named usePlants that returns a copy of the plantStore array
 export const usePlants = () => {
+    //return a copy of the plantStore Array 
 return plantStore.map( x => x);
 };
 

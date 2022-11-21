@@ -19,11 +19,14 @@ import {usePlants, addPlant} from "./field.js";
 
 //create and export a plantSeeds function
 export const plantSeeds = (rows) => {
+    //use a spread operator to copy the array passed in before iteration
+    let arr1 = [...rows];
     //iterate through the first array
-    for(const row of rows) {
+    // for(const row of rows) {
+        for(const row of arr1) {
         //iterate through second layer of array
         for(const plant of row) {
-            //if statemnt to create the seed matching the row location
+            //if statement to create the seed matching the row location
             if (plant === "Asparagus") {
                const seed = createAsparagus();
                //add seed to array of plants
